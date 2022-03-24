@@ -1,0 +1,10 @@
+CST-2022-03-18_10-50-12
+Filesystem,Size,Used,Avail,Use%,Mounted
+devtmpfs,909M,0,909M,0%,/dev
+tmpfs,919M,0,919M,0%,/dev/shm
+tmpfs,919M,97M,823M,11%,/run
+tmpfs,919M,0,919M,0%,/sys/fs/cgroup
+/dev/vda1,40G,8.1G,30G,22%,/
+overlay,40G,8.1G,30G,22%,/var/lib/docker/overlay2/3fefbe3def30f76022c6a145a38653f98ec6e42e10a92ad8c23623a0d551e332/merged
+overlay,40G,8.1G,30G,22%,/var/lib/docker/overlay2/792c79c386ed19cd0e35979eac1a369b348bb49782c41213f1ba0a40017d7aa5/merged
+tmpfs,184M,0,184M,0%,/run/user/0

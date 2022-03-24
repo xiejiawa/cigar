@@ -1,0 +1,18 @@
+#!/usr/bin/expect  
+set timeout 10  
+set remote_host 		[lindex $argv 0]  
+set remote_password 	[lindex $argv 1]  
+set src_file 	        [lindex $argv 2]  
+set dest_file 	        [lindex $argv 3]  
+
+if {$argc != 4} {
+        puts "Usage: $argv0 Device_ip cli_user os_password cmdfile\n"; 
+        exit 1
+}
+spawn scp $src_file root@$remote_host:$dest_file  
+
+expect {  
+		"*yes/no?"  {send "yes\n"; exp_continue}
+		"*assword:" {send "$remote_password\n"; exp_continue} 
+} 
+exit 0

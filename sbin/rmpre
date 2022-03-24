@@ -1,0 +1,2 @@
+#!/bin/sh
+ls *.c|xargs -I {} basename {} .c |xargs -I {} rm -f {}.o

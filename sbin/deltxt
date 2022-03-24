@@ -1,0 +1,3 @@
+#!/bin/sh
+
+find ./ -name *.txt -exec rm -fr {} \;
